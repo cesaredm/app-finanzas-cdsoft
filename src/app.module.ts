@@ -9,11 +9,12 @@ import { TransaccionesModule } from './transacciones/transacciones.module';
   imports: [
     TypeOrmModule.forRoot({
       type: 'mysql',
-      host: 'containers-us-west-163.railway.app',
-      port: 7972,
-      username: 'root',
-      password: 'ovYlSO3Sn4w5XUk41HXN',
-      database: 'railway',
+      host: 'aws.connect.psdb.cloud',
+      port: 3306,
+      username: '8icdwqck4juk48n89joe',
+      password: 'pscale_pw_PX8nh4GxztI1IgzKU2hyhuiPkQBOZKCQF7szzdldsod',
+      database: 'finanzas',
+      ssl: { rejectUnauthorized: true },
       entities: [__dirname + '/**/*.entity{.ts,.js}'],
       synchronize: true,
     }),
