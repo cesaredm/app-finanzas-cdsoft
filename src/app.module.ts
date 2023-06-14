@@ -14,7 +14,7 @@ import { TransaccionesModule } from './transacciones/transacciones.module';
       password: '19199697tsoCD',
       database: 'finanzascdsoft',
       entities: [__dirname + '/**/*.entity{.ts,.js}'],
-      synchronize: true,
+      synchronize: false,
     }),
     UsersModule,
     TransaccionesModule,
