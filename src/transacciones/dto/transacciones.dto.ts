@@ -1,12 +1,12 @@
 export class TransaccionesDto {
-  fecha: Date;
+  fecha: any;
   tipoMovimiento: string;
   monto: number;
   nota: string;
 }
 
 export class UpdateTransaccionDto {
-  fecha?: Date;
+  fecha?: any;
   tipoMovimiento?: string;
   monto?: number;
   nota?: string;

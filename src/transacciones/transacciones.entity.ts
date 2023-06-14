@@ -5,7 +5,7 @@ export class Transacciones {
   @PrimaryGeneratedColumn({ type: 'int', unsigned: true })
   id: number;
   @Column({ type: 'datetime' })
-  fecha?: Date;
+  fecha: any;
   @Column({ type: 'varchar', length: 15 })
   tipoMovimiento: string;
   @Column({ type: 'decimal', precision: 12, scale: 2 })
