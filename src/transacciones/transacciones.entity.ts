@@ -4,7 +4,7 @@ import { Entity, Column, PrimaryGeneratedColumn } from 'typeorm';
 export class Transacciones {
   @PrimaryGeneratedColumn({ type: 'int', unsigned: true })
   id: number;
-  @Column({ type: 'datetime' })
+  @Column({ type: 'datetime', nullable: true })
   fecha: any;
   @Column({ type: 'varchar', length: 15 })
   tipoMovimiento: string;
