@@ -31,6 +31,12 @@ export class TransaccionesService {
     });
   }
 
+  getTrans(dato: Date) {
+    return this.transaccionRepository
+      .createQueryBuilder('transacciones')
+      .where('date(transacciones.fecha) = :dato', { dato });
+  }
+
   deleteTransaccion(id: number) {
     return this.transaccionRepository.delete({ id });
   }

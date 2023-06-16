@@ -29,6 +29,11 @@ export class TransaccionesController {
     return this.transaccionesService.getTransaccionesPorMovimiento(params.mov);
   }
 
+  @Get(':dato')
+  buscarTrans(@Param('dato') dato: Date) {
+    return this.transaccionesService.getTrans(dato);
+  }
+
   @Post()
   crearTransaccion(
     @Body() transaccion: TransaccionesDto,

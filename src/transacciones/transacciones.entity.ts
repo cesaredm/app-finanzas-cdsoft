@@ -10,6 +10,8 @@ export class Transacciones {
   tipoMovimiento: string;
   @Column({ type: 'decimal', precision: 12, scale: 2, default: 0 })
   monto: number;
+  @Column({ type: 'varchar', length: 15 })
+  moneda: string;
   @Column({ type: 'varchar', length: 120 })
   nota: string;
 }
